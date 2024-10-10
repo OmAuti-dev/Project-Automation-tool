@@ -1,0 +1,27 @@
+import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
+
+const publicRoutes = [
+    '/',
+    '/api/clerk-webhook',
+    '/api/drive-activity/notification',
+    '/api/payment/success',
+]
+const ignoredRoutes =[
+    '/api/auth/callback/discord',
+    '/api/auth/callback/notion',
+    '/api/auth/callback/slack',
+    '/api/flow',
+    '/api/cron/wait'
+]
+
+const protectedRoutes = createRouteMatcher([
+    '/dashboard(.*)'
+])
+export default clerkMiddleware((auth, req)=>{
+    if(protectedRoutes(req)) auth().protect()
+   
+});
+
+export const config = {
+  matcher: ["/((?!.*\\..*|_next).*)", "/", "/(api|trpc)(.*)"],
+};
