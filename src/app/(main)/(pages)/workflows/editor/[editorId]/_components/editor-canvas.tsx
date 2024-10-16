@@ -16,6 +16,8 @@ import { usePathname } from 'next/navigation';
 import { EditorCanvasDefaultCardTypes } from '@/lib/constants';
 import { v4 } from 'uuid'
 import { DragControls } from 'framer-motion';
+import FlowInstance from './flow-instance';
+import EditorCanvasSidebar from './editor-canvas-sidebar';
  
 type Props = {}
 

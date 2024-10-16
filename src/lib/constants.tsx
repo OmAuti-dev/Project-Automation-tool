@@ -96,11 +96,11 @@ export const products = [
 export const menuOptions = [
   { name: 'Dashboard', Component: Home, href: '/dashboard' },
   { name: 'Workflows', Component: Workflows, href: '/workflows' },
-  { name: 'Settings', Component: Settings, href: '/settings' },
+  { name: 'Tasks', Component: Logs, href: '/tasks' },
   { name: 'Connections', Component: Category, href: '/connections' },
-  { name: 'Billing', Component: Payment, href: '/billing' },
-  { name: 'Templates', Component: Templates, href: '/templates' },
-  { name: 'Logs', Component: Logs, href: '/logs' },
+  { name: 'Reports', Component: Payment, href: '/reports' },
+  { name: 'Settings', Component: Settings, href: '/settings' },
+  // { name: 'Templates', Component: Templates, href: '/templates' },
 ]
 
 export const EditorCanvasDefaultCardTypes = {

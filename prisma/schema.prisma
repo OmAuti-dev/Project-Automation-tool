@@ -122,3 +122,13 @@ model Workflows {
   User              User     @relation(fields: [userId], references: [clerkId])
   userId            String
 }
+
+model Task {
+  id          String   @id @default(uuid())
+  title       String
+  description String
+  assignedTo  String
+  status      String   @default("Pending")
+  createdBy   String
+  createdAt   DateTime @default(now())
+}

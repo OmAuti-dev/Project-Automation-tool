@@ -8,8 +8,8 @@ import { Toaster } from "sonner";
 const font = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "aura",
-  description: "Automate your work with aura",
+  title: "BE Project",
+  description: "Automate your work with Project",
 };
 
 export default function RootLayout({
