@@ -17,9 +17,12 @@ export function LampComponent() {
         }}
         className="mt-5 bg-gradient-to-br from-neutral-300 to-neutral-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
-        Plans That
-        <br /> Fit You Best
+        About Us
+        <div className=' text-xl px-4 py-4'>
+        Welcome to our project automation and management platform! We are committed to simplifying project workflows through advanced AI and machine learning technology. Our system streamlines task assignment, enhances communication between teams and clients, and ensures real-time progress tracking. Designed to boost efficiency and transparency, our solution helps businesses automate key project management processes, reducing manual work and improving overall productivity. Let us help you manage your projects smarter and more efficiently!
+        </div>
       </motion.h1>
+
     </LampContainer>
   )
 }

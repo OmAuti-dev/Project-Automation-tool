@@ -10,14 +10,7 @@ import {
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
-import { title } from 'process'
+
 
 type Props = {}
 
@@ -44,7 +37,7 @@ const DashboardPage = (props: any) => {
       </CardContent>
       <CardFooter className="flex justify-between">
         
-        <Button>Select</Button>
+        <Button>{props.button}</Button>
       </CardFooter>
     </Card>
         </div>
